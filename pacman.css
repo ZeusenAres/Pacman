@@ -1,0 +1,17 @@
+﻿body {
+}
+
+.dot {
+  background-color: aqua;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.empty {
+  background-color: green;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
