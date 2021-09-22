@@ -1,6 +1,7 @@
 <?php
 
 require('Ghost.php');
+require('Maze.php');
 
 $ghosts = [
     new Ghost("red"),
@@ -13,5 +14,8 @@ foreach ($ghosts as $ghost)
 {
     echo $ghost . "</br>";
 }
+
+$maze = new Maze();
+$maze->Show();
 
 ?>
