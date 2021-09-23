@@ -23,18 +23,22 @@ class Maze
         return $content == 1 ? $this->Dot() : $this->Empty();
     }
 
+    private function ShowRow(array $row)
+    {
+        echo "<tr>";
+        for ($x = 0; $x < count($row); $x++)
+        {
+            echo $this->Cell($row[$x]);
+        }
+        echo "</tr>";
+    }
+
     public function Show()
     {
         echo "<table cellspacing='0'>";
         for ($y = 0; $y < count($this->Board); $y++)
         {
-            $row = $this->Board[$y];
-            echo "<tr>";
-            for ($x = 0; $x < count($row); $x++)
-            {
-              echo $this->Cell($row[$x]);
-            }
-            echo "</tr>";
+            $this->ShowRow($this->Board[$y]);
         }
         echo "</table>";
     }
