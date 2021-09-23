@@ -15,7 +15,7 @@ class Maze
 
     private function Empty() : string
     {
-       return "<td class='empty'/>";
+        return "<td class='empty'/>";
     }
 
     private function Cell(int $content) : string
@@ -48,7 +48,8 @@ class Maze
         $this->Board = [
             [1, 1, 1, 1, 1, 1],
             [1, 0, 0, 0, 0, 1],
-            [1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 0, 0, 1],
+            [1, 0, 0, 1, 0, 1],
             [1, 0, 0, 0, 0, 1],
             [1, 1, 1, 1, 1, 1],
           ];
