@@ -23,7 +23,7 @@ class Maze
         return $content == 1 ? $this->Dot() : $this->Empty();
     }
 
-    private function ShowRow(array $row)
+    private function RenderRow(array $row)
     {
         echo "<tr>";
         for ($x = 0; $x < count($row); $x++)
@@ -33,12 +33,12 @@ class Maze
         echo "</tr>";
     }
 
-    public function Show()
+    public function Render()
     {
         echo "<table cellspacing='0'>";
         for ($y = 0; $y < count($this->Board); $y++)
         {
-            $this->ShowRow($this->Board[$y]);
+            $this->RenderRow($this->Board[$y]);
         }
         echo "</table>";
     }

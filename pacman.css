@@ -15,3 +15,15 @@
   height: 20px;
 }
 
+.button {
+  height: 40px;
+  width: 80px;
+}
+
+.buttonWithText {
+  text-align: center;
+  font-family: 'Lucida Sans';
+  background-color: lightgoldenrodyellow;
+}
+
+

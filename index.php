@@ -3,6 +3,7 @@
 
 require('Ghost.php');
 require('Maze.php');
+require('Buttons.php');
 
 $ghosts = [
     new Ghost("red"),
@@ -17,6 +18,8 @@ foreach ($ghosts as $ghost)
 }
 
 $maze = new Maze();
-$maze->Show();
+$maze->Render();
 
+$buttons = new Buttons();
+$buttons->Render();
 ?>
